@@ -54,7 +54,7 @@ namespace Exerchise3_001
             {
                 Console.WriteLine("\nRecords in the list are : \n");
                 Node currentNode;
-                curentNode = LAST.next;
+                currentNode = LAST.next;
                 while (currentNode != LAST)
                 {
                     Console.Write(currentNode.rollNumber + " " +
@@ -76,7 +76,7 @@ namespace Exerchise3_001
               void insert()
             {
                 int rollNumber;
-                string rollno;
+                string rollNo;
                 Console.WriteLine("\nMasukkan nomor : ");
                 rollNumber = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("\nMasukkan nama: ");
@@ -84,7 +84,7 @@ namespace Exerchise3_001
 
                 Node nodebaru = new Node();
                 nodebaru.rollNumber = rollNumber;
-                nodebaru.name = rollno;
+                
                 //Node ditambahkan sebagai node pertama
                 if (LAST == null || rollNumber != LAST.rollNumber)
                 {
@@ -159,9 +159,9 @@ namespace Exerchise3_001
                                 }
                                 break;
                             case '3':
-                                {
-                                    obj.firstNode();
-                                }
+                            {
+                                
+                            }                              
                                 break; ;
                             case '4':
                                 return;
